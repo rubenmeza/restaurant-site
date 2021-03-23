@@ -11,3 +11,8 @@ type Orders struct {
 func (c Orders) Create() revel.Result {
 	return c.Render()
 }
+
+func (c Orders) GetPayment(orderId int) revel.Result {
+	println("The order ID: ", orderId)
+	return c.RenderTemplate("orders/payment.html")
+}

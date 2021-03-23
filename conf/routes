@@ -18,6 +18,8 @@ GET     /public/*filepath                       Static.Serve("public")
 GET     /customers/createAccount                Accounts.Create
 GET     /accounts/create                        404
 
+GET /orders/:orderId/pay                        Orders.GetPayment
+
 # Catch all, this will route any request into the controller path
 #
 #                    **** WARNING ****
