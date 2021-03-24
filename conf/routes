@@ -16,6 +16,7 @@ GET     /favicon.ico                            404
 GET     /public/*filepath                       Static.Serve("public")
 
 GET     /customers/createAccount                Accounts.Create
+POST    /customers/createAccount                Accounts.CreatePost
 GET     /accounts/create                        404
 
 GET /orders/:orderId/pay                        Orders.GetPayment
