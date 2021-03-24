@@ -2,7 +2,7 @@ package models
 
 type Account struct {
 	ID        int
-	FristName string
+	FirstName string
 	LastName  string
 	Address1  string
 	Address2  string
